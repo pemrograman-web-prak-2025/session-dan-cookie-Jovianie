@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #DBD0C4;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #A7AD89;
+    padding: 30px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-family: 'Mancunian', serif;
+    color: #697254;
+    text-align: center;
+    font-size: 2.8em;
+    letter-spacing: 1px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #B69C85;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: #92735C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(146, 115, 92, 0.3);
+}
+
+.btn-sm {
+    padding: 8px 18px;
+    font-size: 14px;
+}
+
+.btn-danger {
+    background-color: #8C916C;
+}
+
+.btn-danger:hover {
+    background-color: #697254;
+}
+
+.alert {
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    background-color: #A7AD89;
+    color: #fff;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #6a6a6a;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #DBD0C4;
+    border-radius: 12px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+    background-color: #fefefe;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #B69C85;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.badge-hilang {
+    background-color: #92735C;
+    color: #fff;
+}
+
+.badge-ditemukan {
+    background-color: #A7AD89;
+    color: #fff;
+}
+
+.badge-selesai {
+    background-color: #697254;
+    color: #fff;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item-title {
+    font-size: 1.4em;
+    color: #697254;
+    font-weight: 600;
+}
+
+.item-info {
+    margin: 12px 0;
+    color: #6a6a6a;
+    font-size: 14px;
+}
+
+.item-info strong {
+    color: #4a4a4a;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.top-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #697254;
+    font-family: 'Mancunian', serif;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.error-text {
+    color: #92735C;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #3a3a3a;
+}
+
+body.dark-mode header h1 {
+    color: #B69C85;
+}
+
+body.dark-mode .card {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="date"],
+body.dark-mode input[type="password"],
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #4a4a4a;
+}
+
+body.dark-mode label {
+    color: #b0b0b0;
+}
+
+body.dark-mode .item-info {
+    color: #b0b0b0;
+}
+
+body.dark-mode .item-info strong {
+    color: #e0e0e0;
+}
+
+body.dark-mode .item-title {
+    color: #B69C85;
+}
+
+body.dark-mode h2 {
+    color: #B69C85;
+}
+
+body.dark-mode .alert {
+    background-color: #4a4a4a;
+    color: #e0e0e0;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    background: none;
+    border: 2px solid #697254;
+    color: #697254;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #697254;
+    color: #fff;
+}
+
+body.dark-mode .dark-mode-toggle {
+    border-color: #B69C85;
+    color: #B69C85;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    background-color: #B69C85;
+    color: #fff;
+}
+
+body.dark-mode .btn {
+    background-color: #B69C85;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #92735C;
+}
+
+body.dark-mode .btn-danger {
+    background-color: #8C916C;
+}
+
+body.dark-mode .btn-danger:hover {
+    background-color: #697254;
+}
+
+body.dark-mode header span {
+    color: #B69C85 !important;
+}
